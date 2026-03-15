@@ -1,16 +1,175 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>LCVP | Tienda en Cajamarca</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>LCVP</h1>
-    <p>Los mejores producttos para uso personal y en casa en Cajamarca</p>
-    <button>Carrito</button>
-    <button>Objetos</button>
-    <button>Contactanos</button>
-    
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <h1>LCVP</h1>
+        </div>
+        <nav class="nav-links">
+            <a href="#hero">Inicio</a>
+            <a href="#objetos">Objetos</a>
+            <a href="#contacto">Contáctanos</a>
+        </nav>
+        <div class="cart-btn" id="cartBtn">
+            <span class="cart-icon">🛒</span> <span class="cart-text">Carrito</span> <span class="cart-count">0</span>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <span class="badge">Nuevos Ingresos en Cajamarca</span>
+            <h1 class="hero-title">Los mejores productos para <span>uso personal y en casa</span></h1>
+            <p class="hero-subtitle">Descubre una selección exclusiva de artículos diseñados para mejorar tu día a día.
+                Calidad, variedad y estilo en cada detalle.</p>
+            <div class="hero-buttons">
+                <a href="#objetos" class="btn btn-primary">Ver Objetos</a>
+                <a href="#contacto" class="btn btn-secondary">Contáctanos</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="blob"></div>
+            <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?q=80&w=600&auto=format&fit=crop"
+                alt="Productos para el hogar">
+            <!-- Glass card floating -->
+            <div class="glass-card floating">
+                <div class="icon">✨</div>
+                <div>
+                    <h4>Calidad Premium</h4>
+                    <p>Garantía de satisfacción</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products / Objetos Section -->
+    <section class="products" id="objetos">
+        <div class="section-header">
+            <h2>Nuestros Objetos Destacados</h2>
+            <p>Explora nuestra variedad de productos imprescindibles.</p>
+        </div>
+
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1584346133934-a3afd2a33c4c?q=80&w=400&auto=format&fit=crop"
+                        alt="Cuidado Personal">
+                    <span class="tag">Hogar</span>
+                </div>
+                <div class="product-info">
+                    <h3>Set de Baño Premium</h3>
+                    <p class="price">S/ 45.00</p>
+                    <button class="btn btn-sm add-to-cart">Añadir al carrito</button>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1629198688000-71f23e745b6e?q=80&w=400&auto=format&fit=crop"
+                        alt="Decoración">
+                    <span class="tag">Personal</span>
+                </div>
+                <div class="product-info">
+                    <h3>Mochila Urbana Minimalista</h3>
+                    <p class="price">S/ 89.90</p>
+                    <button class="btn btn-sm add-to-cart">Añadir al carrito</button>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1540932239986-30128078f3c5?q=80&w=400&auto=format&fit=crop"
+                        alt="Hogar">
+                    <span class="tag">Decoración</span>
+                </div>
+                <div class="product-info">
+                    <h3>Lámpara de Noche LED</h3>
+                    <p class="price">S/ 35.00</p>
+                    <button class="btn btn-sm add-to-cart">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contacto">
+        <div class="contact-container">
+            <div class="contact-text">
+                <h2>¿Tienes alguna duda o pedido especial?</h2>
+                <p>Estamos ubicados en Cajamarca listos para atenderte. Escríbenos y te responderemos a la brevedad
+                    posible.</p>
+            </div>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Tu Nombre" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Tu Correo Electrónico" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" rows="4" placeholder="¿En qué te podemos ayudar?" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>LCVP</h2>
+                <p>Cajamarca, Perú</p>
+            </div>
+            <div class="footer-links">
+                <a href="#">Privacidad</a>
+                <a href="#">Términos y Condiciones</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 LCVP Tienda. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Cart Modal Overlay -->
+    <div class="cart-overlay" id="cartOverlay">
+        <div class="cart-modal">
+            <div class="cart-header">
+                <h2>Tu Carrito</h2>
+                <button class="close-cart" id="closeCart">×</button>
+            </div>
+            <div class="cart-body">
+                <p class="empty-msg">Tu carrito está vacío.</p>
+                <ul class="cart-items" id="cartItemsList"></ul>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="cartTotalValue">S/ 0.00</span>
+                </div>
+                <button class="btn btn-primary btn-block">Proceder al pago</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification Toast -->
+    <div class="toast" id="toast">¡Producto añadido al carrito!</div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
